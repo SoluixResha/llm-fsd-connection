@@ -31,7 +31,7 @@ interface FilterState {
 }
 
 export default function FileConnections() {
-  const [nodes, setNodes] = useState<FileNode[]>([  // eslint-disable-line @typescript-eslint/no-unused-vars
+  const [nodes] = useState<FileNode[]>([
     {
       id: '1',
       name: 'AI Ethics Guidelines.pdf',
@@ -122,7 +122,7 @@ export default function FileConnections() {
     }
   ])
 
-  const [connections, setConnections] = useState<Connection[]>([  // eslint-disable-line @typescript-eslint/no-unused-vars
+  const [connections] = useState<Connection[]>([
     { 
       source: '1', target: '2', type: 'policy_alignment', strength: 0.9,
       description: 'Ethics guidelines directly influence ML research methodologies',

@@ -1,0 +1,15 @@
+# Netlify redirects for SPA routing
+# This ensures all routes are handled by React Router on the client side
+
+# Main SPA redirect - handle all routes
+/*    /index.html   200
+
+# Optional: API redirects (if you add API endpoints later)
+# /api/*  https://your-api-endpoint.com/api/:splat  200
+
+# Optional: Handle specific file types that shouldn't be redirected
+# *.js   /   200
+# *.css  /   200
+# *.png  /   200
+# *.jpg  /   200
+# *.svg  /   200 
