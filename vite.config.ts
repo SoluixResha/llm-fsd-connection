@@ -37,6 +37,6 @@ export default defineConfig({
   
   // Define environment variables (if needed)
   define: {
-    __APP_VERSION__: JSON.stringify(process.env.npm_package_version),
+    __APP_VERSION__: JSON.stringify(process.env.npm_package_version || '1.0.0'),
   },
 })
